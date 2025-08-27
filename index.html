@@ -39,7 +39,7 @@
           <div
             class="bg-[#41ff6b1a] rounded-2xl font-bold px-5 py-1 flex items-center justify-center gap-1"
           >
-            <p>0</p>
+            <p id="heart-count">0</p>
             <img class="w-5 inline" src="./assets/heart.png" alt="" />
           </div>
           <div
@@ -66,6 +66,7 @@
     </header>
     <main class="grid grid-cols-12 gap-6 px-8 py-16">
       <section
+        id="card-section"
         class="col-span-8 md:col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
       >
         <div class="shadow-md bg-white rounded-lg p-4">
@@ -75,7 +76,9 @@
               src="./assets/emergency.png"
               alt="emergency siren"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">জাতীয় জরুরি সেবা</h2>
@@ -105,7 +108,9 @@
               src="./assets/police.png"
               alt="police"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">পুলিশ</h2>
@@ -135,7 +140,9 @@
               src="./assets/fire-service.png"
               alt="Fire Service"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">ফায়ার সার্ভিস</h2>
@@ -165,7 +172,9 @@
               src="./assets/ambulance.png"
               alt="ambulance"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">অ্যাম্বুলেন্স</h2>
@@ -195,7 +204,9 @@
               src="./assets/emergency.png"
               alt="emergency siren"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">নারী ও শিশু সহায়তা</h2>
@@ -225,7 +236,9 @@
               src="./assets/emergency.png"
               alt="emergency siren"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">দুদক</h2>
@@ -255,7 +268,9 @@
               src="./assets/emergency.png"
               alt="emergency siren"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">বিদ্যুৎ বিভ্রাট</h2>
@@ -285,7 +300,9 @@
               src="./assets/emergency.png"
               alt="emergency siren"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">ব্র্যাক</h2>
@@ -315,7 +332,9 @@
               src="./assets/emergency.png"
               alt="emergency siren"
             />
-            <i class="fa-regular fa-heart text-2xl hover:text-red-500"></i>
+            <i
+              class="fa-regular fa-heart text-2xl hover:text-red-500 card-heart"
+            ></i>
           </div>
           <div class="my-4">
             <h2 class="font-black">বাংলাদেশ রেলওয়ে</h2>
@@ -339,6 +358,29 @@
           </div>
         </div>
       </section>
+      <aside class="col-span-4 md:col-span-3 bg-white shadow-md rounded-lg p-4">
+        <div
+          class="flex flex-col lg:flex-row justify-center lg:justify-between items-center text-center"
+        >
+          <p class="font-semibold">
+            <i class="fa-solid fa-clock-rotate-left"></i> Call History
+          </p>
+
+          <p
+            class="bg-[#00A63E] rounded-full text-white px-5 py-2 hover:cursor-pointer hover:bg-green-400"
+          >
+            Clear
+          </p>
+        </div>
+        <div class="mt-4">
+          <div
+            class="flex flex-col md:flex-row md:justify-between items-center p-2 shadow-md bg-gray-50 text-center md:text-left gap-3"
+          >
+            <h2 class="font-medium">জাতীয় জরুরি সেবা <br />999</h2>
+            <p>11:36:58 AM</p>
+          </div>
+        </div>
+      </aside>
     </main>
     <script src="./js/scipt.js"></script>
   </body>
