@@ -29,7 +29,7 @@ document.getElementById('card-section').addEventListener('click', function (e) {
       callBtn.parentNode.parentNode.children[1].children[0].innerText;
     const starCount = document.getElementById('star-count').innerText;
     const time = new Date().toLocaleTimeString();
-    if (starCount < 20) {
+    if (Number(starCount) < 20) {
       alert('❌ আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে ২০ কয়েন লাগবে');
       return;
     }
