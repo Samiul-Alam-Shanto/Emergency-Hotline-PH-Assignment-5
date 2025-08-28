@@ -41,7 +41,7 @@ document.getElementById('card-section').addEventListener('click', function (e) {
     const newHistory = document.createElement('div');
     newHistory.innerHTML = `
         <div
-            class="flex justify-between items-center p-2 shadow-md bg-gray-50 text-center md:text-left gap-3 mt-4"
+            class="flex justify-between items-center p-2 shadow-md bg-gray-50 text-left gap-3 mt-4"
           >
             <h2 class="font-medium">${cardTitleBN} <br />${cardHotlineNumber}</h2>
             <p>${time}</p>
