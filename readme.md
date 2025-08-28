@@ -22,5 +22,5 @@ querySelector is same as querySelectorAll but it just gives access to the first 
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
    Answer:
-   preventDefault() is used for resetting the default feature or events of an HTML elements in DOM.
+   preventDefault() is used for resetting the default feature or events of an HTML element in DOM.
    stopPropagation() is for preventing the event bubble further up from a specific node .
